@@ -12,7 +12,7 @@ const colorInput = randomColor({
   luminosity: `${colorLuminosity}`,
 });
 
-if (colorName) {
+if (!colorName) {
   //if user didnt specify a color,
   //display a random color
   console.log(
