@@ -8,12 +8,15 @@ const colorLuminosity = process.argv[3];
 
 //this will generate the random color
 const colorInput = randomColor({
-  hue: colorName,
-  luminosity: colorLuminosity,
+  hue: `${colorName}`,
+  luminosity: `${colorLuminosity}`,
 });
 
-console.log(
-  chalk.hex(colorInput)(`######################################
+if (!colorName) {
+  //if user didnt specify a color,
+  //display a random color
+  console.log(
+    chalk.hex(colorInput)(`######################################
 ######################################
 ######################################
 #####                           ######
@@ -22,4 +25,19 @@ console.log(
 ######################################
 ######################################
 ######################################`),
-);
+  );
+} else if (colorName) {
+  //if user specified a color or color + luminosity,
+  //display the specified color or color + luminosity
+  console.log(
+    chalk.hex(colorInput)(`######################################
+######################################
+######################################
+#####                           ######
+#####         ${colorInput}           ######
+#####                           ######
+######################################
+######################################
+######################################`),
+  );
+}
