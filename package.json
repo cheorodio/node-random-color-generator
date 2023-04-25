@@ -1,0 +1,21 @@
+{
+  "name": "node-random-color-generator",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "randomcolor": "^0.6.2"
+  },
+  "devDependencies": {
+    "eslint-config-upleveled": "^4.1.8",
+    "typescript": "^5.0.4"
+  }
+}
