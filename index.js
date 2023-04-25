@@ -28,7 +28,7 @@ if (!colorName) {
 ######################################`,
     ),
   );
-} else {
+} else if (colorName) {
   //if user specified a color or color + luminosity,
   //display the specified color or color + luminosity
   console.log(
