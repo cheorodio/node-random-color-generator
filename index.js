@@ -8,8 +8,8 @@ const colorLuminosity = process.argv[3];
 
 //this will generate the random color
 const colorInput = randomColor({
-  hue: `${colorName}`,
-  luminosity: `${colorLuminosity}`,
+  hue: colorName,
+  luminosity: colorLuminosity,
 });
 
 console.log(
