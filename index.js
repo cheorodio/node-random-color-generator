@@ -12,11 +12,8 @@ const colorInput = randomColor({
   luminosity: `${colorLuminosity}`,
 });
 
-if (!colorName) {
-  //if user didnt specify a color,
-  //display a random color
-  console.log(
-    chalk.hex(colorInput)(`######################################
+console.log(
+  chalk.hex(colorInput)(`######################################
 ######################################
 ######################################
 #####                           ######
@@ -25,19 +22,4 @@ if (!colorName) {
 ######################################
 ######################################
 ######################################`),
-  );
-} else if (colorName) {
-  //if user specified a color or color + luminosity,
-  //display the specified color or color + luminosity
-  console.log(
-    chalk.hex(colorInput)(`######################################
-######################################
-######################################
-#####                           ######
-#####         ${colorInput}           ######
-#####                           ######
-######################################
-######################################
-######################################`),
-  );
-}
+);
