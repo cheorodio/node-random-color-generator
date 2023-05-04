@@ -52,7 +52,7 @@ jobs:
             const { stdout: stdoutNoArgs1 } = await execAsync('node index.js');
 
             const pattern =
-              /^( *#{11,}\n){1,} *#{1,} +#{1,}\n *#{1,} +(#[a-f0-9]{6}) +#{1,}\n *#{1,} +#{1,}\n( *#{11,}\n){1,}/m;
+              /^( *#{11,}\n){1,} *#{1,} +#{1,}\n *#{1,} +(#[A-Fa-f0-9]{6}) +#{1,}\n *#{1,} +#{1,}\n( *#{11,}\n){1,}/m;
 
             // Get hex color from the output
             const matchNoArgs1 = stripAnsi(stdoutNoArgs1).match(pattern);
