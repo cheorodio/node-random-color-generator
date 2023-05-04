@@ -2,7 +2,16 @@
 
 Create an application that will return a random color in the command line.
 
-## Random color
+## How to run the program
+### Generate random color
+`node index.js`
+### Generate random color based on chosen hue
+`node index.js red`
+### Generate random color luminosity
+`node index.js red light`
+
+
+##
 
 ```bash
 $ node index.js
