@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@types/randomcolor": "^0.5.7",
-    "eslint-config-upleveled": "^4.1.8",
+    "eslint-config-upleveled": "^4.1.9",
     "typescript": "^5.0.4"
   }
 }
